@@ -9,10 +9,15 @@
   body {
     background-color: #ffcb05;
   }
+  #container_img {width:80%; height:300px;}
+  #container_main {height: 100%; width:80%; display:flex}
+  #content_list {width: 50%;}
+  #notes {width: 50%;}
     h1 {
       color:navy;
       font-family: 'Do Hyeon', sans-serif;
       font-weight: bold;
+      font-size: 50pt;
     }
     h2 {
       color:navy;
@@ -34,30 +39,37 @@
   </style>
 </head>
 <body>
-  <h1>
-    <a
-    href="https://en.wikipedia.org/wiki/Catch-22"
-    target="_blank" title="catch-22 위키피디아 문서">
-    <strong>캐치-22</strong></a>
-  </h1>
-  <img src="https://i.imgur.com/skpIVrW.jpg" width="10%">
-  <ol>
-    <li><a
-      href="characters_main.html"
-      target="_blank" title="인물 소개와 어록">
-      <h2>인물 소개와 어록</h2></a></li>
-    <li><a
-      href="timeline.html"
-      target="_blank" title="타임라인">
-      <h2>타임라인</h2></a></li>
-    <li><a
-      href="reviews.html"
-      target="_blank" title="리뷰">
-      <h2>리뷰</h2></a></li>
-  </ol>
-  <p style="margin-top:20px;">번역본으로 두 번, 오디오북으로 한 번 읽고
-     이 책으로 이상심리학 레포트까지 썼지만 아직도 작품 속 사건이 발생한 순서가 정리가 안되네요;;
-     타임라인을 복잡하게 꼬아둔 것이 문학적인 장치라는 것을 감안하더라도
-     너무 복잡해서 정리가 필요하다고 생각해서 프로젝트를 시작하게 되었습니다.</p>
+  <div id="container_img">
+    <img
+    src="https://scottattebery.com/wp-content/uploads/2014/08/catch22-joseph-1680x1050-wallpaper-898614-1024x640.jpg"
+    style="float:center;width:100%;height:100%;">
+  </div>
+  <h1>캐치-22</h1>
+  <div id="container_main">
+    <div id="content_list">
+      <ol>
+        <li><h2>작품과 작가 소개</h2></li>
+        <li><a
+          href="characters_main.html"
+          target="_blank" title="인물 소개와 어록">
+          <h2>인물 소개와 어록</h2></a></li>
+        <li><h2>배경 지식</h2></li>
+        <li><a
+          href="timeline.html"
+          target="_blank" title="타임라인">
+          <h2>타임라인</h2></a></li>
+        <li><a
+          href="reviews.html"
+          target="_blank" title="리뷰">
+          <h2>리뷰: 캐치-22를 바라보는 다양한 관점들</h2></a></li>
+      </ol>
+    </div>
+    <div id="notes">
+      <p>(임시 문구)번역본으로 두 번, 오디오북으로 한 번 읽고
+         이 책으로 이상심리학 레포트까지 썼지만 아직도 작품 속 사건이 발생한 순서가 정리가 안되네요;;
+         타임라인을 복잡하게 꼬아둔 것이 문학적인 장치라는 것을 감안하더라도
+         너무 복잡해서 정리가 필요하다고 생각해서 프로젝트를 시작하게 되었습니다.</p>
+    </div>
+  </div>
 </body>
 </html>
